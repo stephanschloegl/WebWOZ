@@ -1,0 +1,2 @@
+serviceClass: com.webwoz.wizard.client.DatabaseAccess
+path: 1FB761752A834576A20D8562AA753F05.gwt.rpc

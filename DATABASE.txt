@@ -1,0 +1,261 @@
+--
+-- First create Database and tables
+--
+
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `webwoz`
+--
+CREATE DATABASE `webwoz` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `webwoz`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `domaindata`
+--
+
+CREATE TABLE IF NOT EXISTS `domaindata` (
+  `id` int(11) NOT NULL auto_increment,
+  `expid` int(10) NOT NULL,
+  `semkey` text collate utf8_unicode_ci,
+  `section` int(2) default '1',
+  `rank` int(2) default '1',
+  `origtext` text collate utf8_unicode_ci,
+  `origaudiofile` text collate utf8_unicode_ci,
+  `origmmfile` text collate utf8_unicode_ci,
+  `transtext` text collate utf8_unicode_ci,
+  `transaudiofile` text collate utf8_unicode_ci,
+  `transmmfile` text collate utf8_unicode_ci,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1448 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `domaindataslot`
+--
+
+CREATE TABLE IF NOT EXISTS `domaindataslot` (
+  `dataid` int(10) NOT NULL,
+  `slotid` int(10) NOT NULL,
+  `id` int(10) NOT NULL auto_increment,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3468 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `experiment`
+--
+
+CREATE TABLE IF NOT EXISTS `experiment` (
+  `id` int(10) NOT NULL auto_increment,
+  `name` varchar(128) collate utf8_unicode_ci NOT NULL,
+  `users` int(1) NOT NULL default '1',
+  `notes` text collate utf8_unicode_ci,
+  `info` text collate utf8_unicode_ci,
+  `mediaserver` varchar(250) collate utf8_unicode_ci NOT NULL,
+  `layout` int(10) NOT NULL,
+  `userid` int(10) NOT NULL,
+  `ssoutputlang` varchar(2) collate utf8_unicode_ci default 'en',
+  `mtinsrc` varchar(2) collate utf8_unicode_ci default 'en',
+  `mtintrg` varchar(2) collate utf8_unicode_ci default 'en',
+  `mtoutsrc` varchar(2) collate utf8_unicode_ci default 'en',
+  `mtouttrg` varchar(2) collate utf8_unicode_ci default 'en',
+  `asrlang` varchar(2) collate utf8_unicode_ci default 'en',
+  `asrin` int(1) NOT NULL default '1',
+  `textout` int(1) NOT NULL default '1',
+  `audioout` int(1) NOT NULL default '1',
+  `mmout` int(1) NOT NULL default '0',
+  `nbestlist` int(1) NOT NULL default '0',
+  `wizardcorrection` int(1) NOT NULL default '0',
+  `freetext` int(1) NOT NULL default '0',
+  `textin` int(1) NOT NULL default '1',
+  `userlogout` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=432 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `experimentcomponent`
+--
+
+CREATE TABLE IF NOT EXISTS `experimentcomponent` (
+  `experimentid` int(10) NOT NULL,
+  `rank` int(1) NOT NULL,
+  `componenttype` int(1) NOT NULL,
+  `component` int(10) NOT NULL,
+  `componentmode` int(1) NOT NULL,
+  `id` int(10) NOT NULL auto_increment,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2264 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `experimentnotes`
+--
+
+CREATE TABLE IF NOT EXISTS `experimentnotes` (
+  `id` int(10) NOT NULL auto_increment,
+  `expid` int(10) NOT NULL,
+  `userid` int(10) NOT NULL,
+  `timestamp` varchar(25) collate utf8_unicode_ci NOT NULL,
+  `note` text collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=51 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `experimentuser`
+--
+
+CREATE TABLE IF NOT EXISTS `experimentuser` (
+  `expid` int(10) NOT NULL,
+  `userid` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `freetext`
+--
+
+CREATE TABLE IF NOT EXISTS `freetext` (
+  `id` int(11) NOT NULL auto_increment,
+  `expid` int(11) NOT NULL,
+  `semkey` text collate utf8_unicode_ci,
+  `text` text collate utf8_unicode_ci,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `layout`
+--
+
+CREATE TABLE IF NOT EXISTS `layout` (
+  `id` int(10) NOT NULL auto_increment,
+  `name` varchar(128) collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `output`
+--
+
+CREATE TABLE IF NOT EXISTS `output` (
+  `id` int(10) NOT NULL auto_increment,
+  `textorig` text collate utf8_unicode_ci NOT NULL,
+  `audioorig` text collate utf8_unicode_ci NOT NULL,
+  `mmorig` text collate utf8_unicode_ci NOT NULL,
+  `texttrans` text collate utf8_unicode_ci NOT NULL,
+  `audiotrans` text collate utf8_unicode_ci NOT NULL,
+  `mmtrans` text collate utf8_unicode_ci NOT NULL,
+  `experiment` int(10) NOT NULL,
+  `timestamp` varchar(25) collate utf8_unicode_ci NOT NULL,
+  `played` int(1) NOT NULL default '0',
+  `transtextflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `origtextflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `transaudioflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `origaudioflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `transmmflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `origmmflag` varchar(25) collate utf8_unicode_ci NOT NULL default '-',
+  `signal` int(1) NOT NULL default '0',
+  `user` int(10) NOT NULL,
+  `sender` int(10) default NULL,
+  `receiver` int(10) default NULL,
+  `asr` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`),
+  KEY `user` (`user`),
+  KEY `experiment` (`experiment`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2632 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recording`
+--
+
+CREATE TABLE IF NOT EXISTS `recording` (
+  `id` int(11) NOT NULL auto_increment,
+  `expid` int(10) NOT NULL,
+  `semkey` text collate utf8_unicode_ci,
+  `section` int(2) default '1',
+  `rank` int(2) default '7',
+  `origtext` text collate utf8_unicode_ci,
+  `origaudiofile` text collate utf8_unicode_ci,
+  `origmmfile` text collate utf8_unicode_ci,
+  `transtext` text collate utf8_unicode_ci,
+  `transaudiofile` text collate utf8_unicode_ci,
+  `transmmfile` text collate utf8_unicode_ci,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2692 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slot`
+--
+
+CREATE TABLE IF NOT EXISTS `slot` (
+  `id` int(10) NOT NULL auto_increment,
+  `expid` int(10) NOT NULL,
+  `name` varchar(25) collate utf8_unicode_ci NOT NULL,
+  `value` text collate utf8_unicode_ci,
+  `type` int(1) NOT NULL,
+  `rank` int(2) NOT NULL default '1',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=509 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tab`
+--
+
+CREATE TABLE IF NOT EXISTS `tab` (
+  `id` int(10) NOT NULL auto_increment,
+  `tabname` varchar(30) collate utf8_unicode_ci NOT NULL,
+  `exp` int(10) NOT NULL,
+  `rank` int(11) NOT NULL,
+  `notes` text collate utf8_unicode_ci,
+  `freetext` int(1) NOT NULL default '0',
+  `visible` int(1) NOT NULL default '1',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=771 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(60) collate utf8_unicode_ci NOT NULL,
+  `pw` varchar(30) collate utf8_unicode_ci NOT NULL,
+  `role` int(1) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=565 ;
+
+
+--
+-- Now create wizard and client user and grant them access to webwoz db
+--
+
+CREATE USER 'wizard'@'localhost' IDENTIFIED BY 'wizard';
+
+GRANT ALL ON webwoz.* TO 'wizard'@'localhost';
+
+CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'testuser';
+
+GRANT ALL ON webwoz.* TO 'testuser'@'localhost';

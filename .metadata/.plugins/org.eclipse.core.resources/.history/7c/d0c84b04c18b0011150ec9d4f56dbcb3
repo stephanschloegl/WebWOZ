@@ -1,0 +1,499 @@
+/** Add css rules here for your application. */
+
+.contentPanel {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.menuPanel {
+	margin-bottom: 10px;
+}
+
+.settingsUserPanel {
+	width: 50px;
+	margin-left: 7px;
+}
+
+.settingsComponentsPanel {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.settingsWizardPanel {
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 7px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.userPanel {
+	margin-left: 10px;
+	margin-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+.loginPanel {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+
+.editPanel {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.editTabsPanel {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.addExperimentPanel {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.utterance {
+	margin-right:10px;
+	margin-left:5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.utteranceSent {
+	color: #800080;
+	margin-right:10px;
+	margin-left:5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.utteranceEdit {
+	background-color: #DCDCDC;
+	margin-right:10px;
+	margin-left:5px;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+.slotHeading {
+	margin-left:10px;
+	margin-top:10px;
+	font-weight: bold;
+}
+
+.slot {
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+.button {
+	margin-right: 5px;	
+	margin-left: 5px;
+}
+
+.processingButton {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.buttonSlotEdit {
+	margin-top: 10px;
+	margin-right: 5px;	
+	margin-left: 5px;
+}
+
+.buttonVertical {
+	margin-top: 10px;	
+}
+
+.buttonHorizontal {
+	margin-top: 10px;	
+	margin-right: 10px;	
+}
+
+.showReportButton {
+	margin-right: 5px;	
+	margin-left: 15px;
+}
+
+.cancleEditTabButton {
+	margin-left: 450px;
+}
+
+.reportButtons {
+	margin-left: 640px;
+}
+
+.editButtons {
+	margin-left: 525px;
+}
+
+.addButtons {
+	margin-left: 625px;
+}
+
+.cancelEditSlotPopUpButton {
+	margin-left: 500px;
+}
+
+.experimentClosePanel {
+	margin-left: 340px;
+	margin-top: 20px;
+}
+
+.experimentEditClosePanel {
+	margin-left: 355px;
+	margin-top: 20px;
+}
+
+.saveChangeExperimentButton {
+	margin-left: 260px;
+}
+
+.marginRight {
+	margin-right: 30px;
+}
+
+.addFilterButtons {
+	margin-left: 425px;
+}
+
+.experimentSavePanel {
+	margin-left: 280px;
+}
+
+.saveNotesbutton {
+	margin-top: 120px;	
+	margin-left: 10px;
+}
+
+.label {
+	margin-right: 10px;
+}
+
+.labelLeft {
+	margin-left: 10px;
+}
+
+.labelVertical {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.labelMiddle {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.list {
+	margin-right: 10px;
+}
+
+.text {
+	margin-right: 10px;
+}
+
+.textLeft {
+	margin-left: 10px;
+}
+
+.recoveryHeading {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 11px;
+}
+
+.domainDataResponseHeading {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.recoveryPanel {
+	margin-top: 0px;
+	margin-left: 10px;
+	border: 2px solid #99CCFF;
+}
+
+.domainData {
+	margin-bottom: 10px;
+}
+
+.domainDataPanel {
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+.domainDataSlotPanel {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.historyPanel {
+	margin-bottom: 10px;
+	margin-left: 2px;
+	paddin-left: 10px;
+	border: 1px solid #666;
+	height: 100px;
+	width: 820px;
+}
+
+.historyHeading {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.historyOld {
+	color: #808080;
+}
+
+.asrInput {
+	color: #800000;
+}
+
+.utteranceHeading {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 2px;	
+}
+
+.historyUtterancesPanel {
+	margin-left: 10px;
+	margin-top: 2px;
+}
+	
+.title {
+	margin-left:10px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-shadow: none;
+	font-size: 120%;
+}
+
+.experimentNotesHeading {
+	margin-top: 10px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.experimentNotesHeadingButton {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.experimentNotes {
+	margin-top: 0px;
+	background-color: #FFFF99; 
+	width: 210px;
+	height: 143px;
+}
+
+.experimentNotesSaved {
+	margin-top: 0px;
+	margin-bottom: 2px;
+	background-color: #FFFF99; 
+	width: 215px;
+}
+
+.experimentNotesContainer{
+	margin-left: 20px;
+}
+
+.tabNotesHeading {
+	font-weight: bold;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+.experimentTabNotes {
+	background-color: #ADD8E6;
+	height: 70px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top:5px:
+}
+
+.experimentNotesPanel {
+	margin-bottom: 2px; 	
+}
+
+.editHeadingPanel {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+ 
+.reportTable {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px
+}
+
+.reportContentScrollPanel {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.reportContentText {
+	width: 250px;
+	padding-left: 10px;
+}
+
+.timestamp {
+	width: 100px:
+}
+
+.editTabs {
+	margin-top: 5px;	
+}
+
+.error {
+	color: red;
+}
+
+.errorSlot {
+	color: red;
+	margin-left: 40px;
+}
+
+.editDomainFilterPanel {
+	margin-top: 10px;
+}
+
+.editFilterSlotsPanel {
+	margin-left: 40px;
+}
+
+.editFilterSlotValues {
+	margin-top: 10px;
+	margin-left: 40px;
+	font-weight: bold;
+}
+
+.editFilterPanel {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.addFilterSlotCollection {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.standardFilterValueExpLabel {
+	margin-top:5px;
+	font-size: 80%;
+}
+
+.addFilterValue {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.userExperimentHeading {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.link {
+	margin-left: 5px;
+	margin-right: 5px;	
+}
+
+.registerUser {
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.registerUserButtons {
+	margin-left: 140px;
+	margin-top:10px;
+}
+
+.experimentDataList {
+	margin-left: 10px;
+}
+
+.compSet {
+	margin-top: 10px;
+	margin-left: 2px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.drp {
+	margin-right: 5px;
+}
+
+.marginBottom {
+	margin-bottom: 20px;
+	margin-left:5px;
+}
+
+.user {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+	
+.loginMessage {
+	color: red;
+	margin-left: 5px;
+}
+
+.notesHeadingPanel{
+	margin-bottom: 5px;
+}
+
+.preparedFreeTextPanel {
+	margin-left: 10px;
+}
+
+.addPreparedText {
+	margin-left: 180px;
+	margin-top: 15px;
+}
+
+.editPreparedText {
+	margin-left: 110px;
+	margin-top: 15px;
+}
+
+.errorUserRegistrationLabel {
+	margin-left: 10px;
+	margin-top: 5px;
+	color: red;
+}
+
+.marginBottom05 {
+	margin-bottom: 5px;
+}
+
+.marginBottom20 {
+	margin-bottom: 20px;
+}
+
+.marginTop05 {
+	margin-top: 5px;
+}
+
+.existingUserHeadingLabel {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.textInChk {
+	margin-right: 40px;	
+}
+

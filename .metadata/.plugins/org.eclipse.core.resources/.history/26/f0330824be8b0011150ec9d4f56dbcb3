@@ -1,0 +1,98 @@
+package com.webwoz.wizard.server;
+
+import com.webwoz.wizard.server.components.ASRDefault;
+import com.webwoz.wizard.server.components.ASRGoogle;
+
+public class ASRComp implements Component {
+
+	// variables
+	private final int type = 1;
+	private final String typeName = "ASR";
+	private String name;
+	private int mode;
+
+	// Sub classes to override this method
+	public String getOutput(String input) {
+		return "ASR: " + input;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMode() {
+		return mode;
+	}
+
+	public String printType() {
+		return typeName;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setMode(int mode) {
+		this.mode = mode;
+	}
+
+	public Component getComponent(int comp, int mode) {
+		// instantiate the right ASR component
+		switch (comp) {
+		case 0:
+			return new ASRDefault(mode);
+		case 1:
+			return new ASRGoogle(mode);
+		default:
+			return new ASRDefault(mode);
+		}
+	}
+
+	public String run(String text, String lang) {
+		return null;
+		
+	}
+
+	public String correct(String semKey, int m) {
+		return null;
+		
+	}
+
+	public String simulate(String text, int m) {
+		return null;
+		
+	}
+
+	public String getUttText() {
+		return null;
+	}
+
+	public String getUttAudio() {
+		return null;
+	}
+
+	public String getUttMM() {
+		return null;
+	}
+
+	public String getResult(String text, String ctrl) {
+		return text;
+	}
+
+	public String getUttTransText() {
+		return null;
+	}
+
+	public String getUttTransAudio() {
+		return null;
+	}
+
+	public String getUttTransMM() {
+		return null;
+	}
+
+}

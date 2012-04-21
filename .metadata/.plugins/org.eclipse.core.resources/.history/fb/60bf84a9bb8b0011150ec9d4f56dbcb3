@@ -1,0 +1,31 @@
+package com.webwoz.wizard.client.wizardlayouts;
+
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.webwoz.wizard.client.Screen;
+
+public class NoLayoutScreen implements Screen {
+
+	private VerticalPanel layout = new VerticalPanel();
+
+	public NoLayoutScreen() {
+		layout.add(new HTML("<p><strong>No Layout:</strong><br />Sorry, the selected layout is not available!</p>"));
+	}
+
+	public VerticalPanel getScreen() {
+		return layout;
+	}
+
+	public void stopReload() {
+		
+	}
+
+	public void turnOffComponent() {
+		
+	}
+
+	public void changeVisibility() {
+		
+	}
+
+}

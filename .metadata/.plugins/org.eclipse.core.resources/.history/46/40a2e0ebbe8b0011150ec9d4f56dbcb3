@@ -1,0 +1,105 @@
+package com.webwoz.wizard.server;
+
+import com.webwoz.wizard.server.components.MTinMicrosoft;
+import com.webwoz.wizard.server.components.MToutDefault;
+//import com.webwoz.wizard.server.components.MToutGoogle;
+import com.webwoz.wizard.server.components.MToutMicrosoft;
+
+public class MToutComp implements Component {
+
+	// variables
+	private final int type = 5;
+	private final String typeName = "MT(out)";
+	private String name;
+	private int mode;
+
+	// Sub classes to override this method
+	public String getOutput(String input) {
+		return "MT: " + input;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMode() {
+		return mode;
+	}
+
+	public String printType() {
+		return typeName;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+
+	}
+
+	public void setMode(int mode) {
+		this.mode = mode;
+	}
+
+	public Component getComponent(int comp, int mode) {
+		// instantiate the right MT component
+		switch (comp) {
+		case 0:
+			return new MToutDefault(mode);
+		case 1:
+			return new MToutMicrosoft(mode);	
+		case 2:
+			// stop Google support, change to Microsoft for existing experiments
+//			return new MTinGoogle(mode);
+			return new MTinMicrosoft(mode);	
+		default:
+			return new MToutDefault(mode);
+		}
+	}
+
+	public String run(String text, String lang) {
+		return null;
+		
+	}
+
+	public String correct(String semKey, int m) {
+		return null;
+		
+	}
+
+	public String simulate(String text, int m) {
+		return null;
+		
+	}
+
+	public String getUttText() {
+		return null;
+	}
+
+	public String getUttAudio() {
+		return null;
+	}
+
+	public String getUttMM() {
+		return null;
+	}
+
+	public String getResult(String text, String ctrl) {
+		return text;
+	}
+
+	public String getUttTransText() {
+		return null;
+	}
+
+	public String getUttTransAudio() {
+		return null;
+	}
+
+	public String getUttTransMM() {
+		return null;
+	}
+
+}

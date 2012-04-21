@@ -1,0 +1,141 @@
+package com.webwoz.wizard.server;
+
+public class Utterance {
+
+	private int experiment;
+	private String semKey;
+	private int section;
+	private int rank;
+	private String text;
+	private String textAudioFile;
+	private String textMMFile;
+	private String translation;
+	private String translationAudioFile;
+	private String translationMMFile;
+	private String translationSrcLang;
+	private String translationTrgLang;
+	private int translEngine;
+	private int speechEnging;
+	private int recEngine;
+
+	public void setExperiment(int experiment) {
+		this.experiment = experiment;
+	}
+
+	public int getExperiment() {
+		return experiment;
+	}
+
+	public void setSemKey(String semKey) {
+		this.semKey = semKey;
+	}
+
+	public String getSemKey() {
+		return semKey;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setSection(int section) {
+		this.section = section;
+	}
+
+	public int getSection() {
+		return section;
+	}
+
+	public void setTextFile(String textFile) {
+		this.textAudioFile = textFile;
+	}
+
+	public String getTextFile() {
+		return textAudioFile;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setTranslation(String translation) {
+		this.translation = translation;
+	}
+
+	public String getTranslation() {
+		return translation;
+	}
+
+	public void setTranslationFile(String translationFile) {
+		this.translationAudioFile = translationFile;
+	}
+
+	public String getTranslationFile() {
+		return translationAudioFile;
+	}
+
+	public void setTranslationSrcLang(String translationSrcLang) {
+		this.translationSrcLang = translationSrcLang;
+	}
+
+	public String getTranslationSrcLang() {
+		return translationSrcLang;
+	}
+
+	public void setTranslationTrgLang(String translationTrgLang) {
+		this.translationTrgLang = translationTrgLang;
+	}
+
+	public String getTranslationTrgLang() {
+		return translationTrgLang;
+	}
+
+	public void setSpeechEnging(int speechEnging) {
+		this.speechEnging = speechEnging;
+	}
+
+	public int getSpeechEnging() {
+		return speechEnging;
+	}
+
+	public void setTranslEngine(int translEngine) {
+		this.translEngine = translEngine;
+	}
+
+	public int getTranslEngine() {
+		return translEngine;
+	}
+
+	public void setRecEngine(int recEngine) {
+		this.recEngine = recEngine;
+	}
+
+	public int getRecEngine() {
+		return recEngine;
+	}
+
+	public void setTranslationMMFile(String translationMMFile) {
+		this.translationMMFile = translationMMFile;
+	}
+
+	public String getTranslationMMFile() {
+		return translationMMFile;
+	}
+
+	public void setTextMMFile(String textMMFile) {
+		this.textMMFile = textMMFile;
+	}
+
+	public String getTextMMFile() {
+		return textMMFile;
+	}
+
+}

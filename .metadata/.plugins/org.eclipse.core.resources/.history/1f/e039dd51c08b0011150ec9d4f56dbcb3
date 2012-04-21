@@ -1,0 +1,12 @@
+package com.webwoz.wizard.server.components;
+
+import com.webwoz.wizard.server.NLUComp;
+
+public class NLUDefault extends NLUComp {
+
+	public NLUDefault(int mode) {
+		super.setMode(mode);
+		super.setName("Off");
+	}
+	
+}

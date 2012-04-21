@@ -1,0 +1,14 @@
+   =========================================================================
+   ==  NOTICE file corresponding to the section 4 d of                    ==
+   ==  the Apache License, Version 2.0,                                   ==
+   ==  in this case for the Apache Maven distribution.                    ==
+   =========================================================================
+
+WebWOZ
+Copyright 20018-2012 The Apache Software Foundation
+
+This product includes software (mysql-connector-java-5.1.13-bin.jar) developed by
+Oracle (http://www.mysql.com/products/connector/).
+
+This product includes software (gwt-servlet.jar) developed by
+Google (https://developers.google.com/web-toolkit/).

@@ -1,0 +1,12 @@
+package com.webwoz.wizard.server.components;
+
+import com.webwoz.wizard.server.ASRComp;
+
+public class ASRDefault extends ASRComp {
+	
+	public ASRDefault(int mode) {
+		super.setMode(mode);
+		super.setName("Off");
+	}
+
+}

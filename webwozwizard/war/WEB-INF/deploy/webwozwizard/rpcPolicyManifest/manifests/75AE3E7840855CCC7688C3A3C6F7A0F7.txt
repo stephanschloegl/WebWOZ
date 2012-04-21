@@ -1,0 +1,2 @@
+serviceClass: com.webwoz.wizard.client.ComponentFactory
+path: 9662665C54BBD5D1D069B4F9333E564C.gwt.rpc

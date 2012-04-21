@@ -1,0 +1,12 @@
+package com.webwoz.wizard.server.components;
+
+import com.webwoz.wizard.server.NLGComp;
+
+public class NLGDefault extends NLGComp {
+
+	public NLGDefault(int mode) {
+		super.setMode(mode);
+		super.setName("Off");
+	}
+	
+}

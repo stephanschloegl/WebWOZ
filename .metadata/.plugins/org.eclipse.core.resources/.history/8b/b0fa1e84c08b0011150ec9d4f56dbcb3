@@ -1,0 +1,147 @@
+package com.webwoz.wizard.server.components;
+
+import com.webwoz.wizard.server.SSComp;
+
+public class SSMuse extends SSComp {
+
+	private String uttText;
+	private String uttAudio;
+	private String uttMM;
+	private String uttTransText;
+	private String uttTransAudio;
+	private String uttTransMM;
+
+	public SSMuse(int mode) {
+		super.setMode(mode);
+		super.setName("Muse");
+	}
+
+	public String getResult(String text, String ctrl) {
+		String speaker = "rich";
+		String format = "mp3";
+		String lang = "usenglish";
+		String inputClean = "";
+//		String sql = "";
+//		String[][] data;
+//		String audio;
+
+//		switch (Integer.parseInt(ctrl.substring(0, 1))) {
+//
+//		case 1: // recording
+//			sql = sql + "Select * from recording where id = " + text + "";
+//			data = db.retrieveData(sql);
+//			
+//			setUttText(data[0][5]);
+//			inputClean = data[0][5].replaceAll(" ", "%20");
+//			audio = "http://muster.ucd.ie/beta/tts.aspx?applicationid=b1b02ac60fa6fd6395428d0fc403ddec&language="
+//					+ lang
+//					+ "&username=Schlogls&text="
+//					+ inputClean
+//					+ "&speaker=" + speaker + "&format=" + format;
+//			setUttAudio(audio);
+//			setUttMM("-");
+//			setUttTransText(data[0][8]);
+//			inputClean = data[0][8].replaceAll(" ", "%20");
+//			audio = "http://muster.ucd.ie/beta/tts.aspx?applicationid=b1b02ac60fa6fd6395428d0fc403ddec&language="
+//					+ lang
+//					+ "&username=Schlogls&text="
+//					+ inputClean
+//					+ "&speaker=" + speaker + "&format=" + format;
+//			setUttTransAudio(audio);
+//			setUttTransMM("-");
+//			break;
+//			
+//		case 2: // recorded domaindata
+//			sql = sql + "Select * from domaindata where id = " + text + "";
+//			data = db.retrieveData(sql);
+//
+//			setUttText(data[0][5]);
+//			inputClean = data[0][5].replaceAll(" ", "%20");
+//			audio = "http://muster.ucd.ie/beta/tts.aspx?applicationid=b1b02ac60fa6fd6395428d0fc403ddec&language="
+//					+ lang
+//					+ "&username=Schlogls&text="
+//					+ inputClean
+//					+ "&speaker=" + speaker + "&format=" + format;
+//			setUttAudio(audio);
+//			setUttMM("-");
+//			setUttTransText(data[0][8]);
+//			inputClean = data[0][8].replaceAll(" ", "%20");
+//			audio = "http://muster.ucd.ie/beta/tts.aspx?applicationid=b1b02ac60fa6fd6395428d0fc403ddec&language="
+//					+ lang
+//					+ "&username=Schlogls&text="
+//					+ inputClean
+//					+ "&speaker=" + speaker + "&format=" + format;
+//			setUttTransAudio(audio);
+//			setUttTransMM("-");
+//			break;
+//
+//		case 3:
+			if (!text.equals("")) {
+				inputClean = text.replaceAll(" ", "%20");
+			}
+			String html = "http://muster.ucd.ie/beta/tts.aspx?applicationid=b1b02ac60fa6fd6395428d0fc403ddec&language="
+					+ lang
+					+ "&username=Schlogls&text="
+					+ inputClean
+					+ "&speaker=" + speaker + "&format=" + format;
+			setUttText(text);
+			setUttMM("-");
+			setUttAudio(html);
+			setUttTransText(text);
+			setUttTransMM("-");
+			setUttTransAudio(html);
+//			break;
+//
+//		}
+		return getUttAudio();
+	}
+
+	public void setUttText(String uttText) {
+		this.uttText = uttText;
+	}
+
+	public String getUttText() {
+		return uttText;
+	}
+
+	public void setUttMM(String uttMM) {
+		this.uttMM = uttMM;
+	}
+
+	public String getUttMM() {
+		return uttMM;
+	}
+
+	public void setUttAudio(String uttAudio) {
+		this.uttAudio = uttAudio;
+	}
+
+	public String getUttAudio() {
+		return uttAudio;
+	}
+
+	public void setUttTransText(String uttTransText) {
+		this.uttTransText = uttTransText;
+	}
+
+	public String getUttTransText() {
+		return uttTransText;
+	}
+
+	public void setUttTransAudio(String uttTransAudio) {
+		this.uttTransAudio = uttTransAudio;
+	}
+
+	public String getUttTransAudio() {
+		return uttTransAudio;
+	}
+
+	public void setUttTransMM(String uttTransMM) {
+		this.uttTransMM = uttTransMM;
+	}
+
+	public String getUttTransMM() {
+		return uttTransMM;
+	}
+
+}

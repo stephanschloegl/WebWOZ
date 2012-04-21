@@ -1,0 +1,8 @@
+INDEX VERSION 1.126+/Users/stephanschlogl/webwoz/.metadata/.plugins/org.eclipse.jdt.core
+2628675734.index
+1919728383.index
+602232189.index
+1323249527.index
+3996013.index
+2169231575.index
+2448919529.index

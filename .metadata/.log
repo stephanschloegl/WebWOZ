@@ -1,0 +1,71 @@
+!SESSION 2012-04-21 12:56:02.904 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.5.0_30
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/stephanschlogl/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -data /Users/stephanschlogl/webwoz -product org.eclipse.epp.package.jee.product -keyring /Users/stephanschlogl/.eclipse_keyring -showlocation
+
+!ENTRY com.google.gdt.eclipse.core 4 0 2012-04-21 12:58:19.692
+!MESSAGE Error while tracking project-level changes from a change in R/
+!STACK 1
+Java Model Exception: Java Model Status [Unbound classpath container: 'GWT SDK [missing]' in project 'webwozclient']
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.isResourceInAnOutputPath(ProjectChangeTimestampTracker.java:123)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.visitDelta(ProjectChangeTimestampTracker.java:164)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.visitDelta(ProjectChangeTimestampTracker.java:171)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.resourceChanged(ProjectChangeTimestampTracker.java:183)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:327)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1181)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1984)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.jdt.core 4 963 2012-04-21 12:58:19.693
+!MESSAGE Unbound classpath container: 'GWT SDK [missing]' in project 'webwozclient'
+
+!ENTRY com.google.gdt.eclipse.core 4 0 2012-04-21 12:58:21.388
+!MESSAGE Error while tracking project-level changes from a change in R/
+!STACK 1
+Java Model Exception: Java Model Status [Unbound classpath container: 'GWT SDK [missing]' in project 'webwozclient']
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.isResourceInAnOutputPath(ProjectChangeTimestampTracker.java:123)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.visitDelta(ProjectChangeTimestampTracker.java:164)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.visitDelta(ProjectChangeTimestampTracker.java:171)
+	at com.google.gdt.eclipse.core.projects.ProjectChangeTimestampTracker.resourceChanged(ProjectChangeTimestampTracker.java:183)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:327)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1181)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1984)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:4777)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:270)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:365)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 963 2012-04-21 12:58:21.389
+!MESSAGE Unbound classpath container: 'GWT SDK [missing]' in project 'webwozclient'
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2012-04-21 12:58:22.996
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.3.0.r36v201105191508
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2012-04-21 12:58:24.451
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.5.1.r36v201106211634
+
+!ENTRY com.google.gdt.eclipse.core 1 0 2012-04-21 12:58:25.030
+!MESSAGE Scheduled rebuild of project webwozclient because of plugin update (current version: 2.3.2.r36v201106211634)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-04-21 13:54:29.693
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-04-21 13:54:29.693
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@d8ff93),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2c18e3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@23950)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79f7d7)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@d8ff93),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2c18e3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@23950)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79f7d7)),sourcePriority=1064961)

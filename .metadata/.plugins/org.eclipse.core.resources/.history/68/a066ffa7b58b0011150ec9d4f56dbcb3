@@ -1,0 +1,31 @@
+package com.webwoz.wizard.client;
+
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.VerticalPanel;
+
+public class SettingsWizard implements Screen {
+
+	private VerticalPanel layoutPanel = new VerticalPanel();
+	
+	public SettingsWizard() {
+		layoutPanel.add(new HTML("|=== Wizard ===>"));
+		layoutPanel.addStyleName("settingsWizardPanel");
+	}
+	
+	public VerticalPanel getScreen() {
+		return layoutPanel;
+	}
+
+	public void stopReload() {
+		
+	}
+
+	public void turnOffComponent() {
+		
+	}
+
+	public void changeVisibility() {
+		
+	}
+
+}

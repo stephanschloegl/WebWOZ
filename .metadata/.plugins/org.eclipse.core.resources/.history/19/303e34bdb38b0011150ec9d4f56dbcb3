@@ -1,0 +1,17 @@
+package com.webwoz.wizard.client;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+
+@RemoteServiceRelativePath("databaseAccess")
+public interface DatabaseAccess extends RemoteService {
+
+	String storeData(String sql);
+
+	String[][] retrieveData(String sql);
+	
+	String getTimeStamp();
+	
+	void closeConnection();
+
+}

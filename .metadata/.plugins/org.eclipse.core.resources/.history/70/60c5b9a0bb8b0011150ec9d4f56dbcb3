@@ -1,0 +1,32 @@
+package com.webwoz.wizard.client.wizardlayouts;
+
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.webwoz.wizard.client.Screen;
+
+public class MySpeechScreen implements Screen {
+
+	VerticalPanel layout = new VerticalPanel();
+
+	public MySpeechScreen() {
+		layout.add(new HTML(
+				"<applet code=\"ie.cngl.muster.myspeech.FrontEndApplet\" archive=\"FrontEndApplet.jar,sphinx4-1.0beta5.jar,commons-logging-1.1.jar,httpclient-4.0.3.jar,httpcore-4.0.1.jar,httpmime-4.0.3.jar,apache-mime4j-0.6.jar\" width=\"600\" height=\"480\"/>"));
+	}
+
+	public VerticalPanel getScreen() {
+		return layout;
+	}
+
+	public void stopReload() {
+		
+	}
+
+	public void turnOffComponent() {
+		
+	}
+
+	public void changeVisibility() {
+		
+	}
+
+}

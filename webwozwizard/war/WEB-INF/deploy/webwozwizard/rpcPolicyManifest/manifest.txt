@@ -1,0 +1,4 @@
+# Module webwozwizard
+# RPC service class, partial path of RPC policy file
+com.webwoz.wizard.client.DatabaseAccess, 1FB761752A834576A20D8562AA753F05.gwt.rpc
+com.webwoz.wizard.client.ComponentFactory, 9662665C54BBD5D1D069B4F9333E564C.gwt.rpc

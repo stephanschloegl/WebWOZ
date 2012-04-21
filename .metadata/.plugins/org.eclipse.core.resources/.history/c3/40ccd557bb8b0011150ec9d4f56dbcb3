@@ -1,0 +1,31 @@
+package com.webwoz.wizard.client.wizardlayouts;
+
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.webwoz.wizard.client.Screen;
+
+public class ChooseLayoutInfoScreen implements Screen {
+
+	private VerticalPanel layout = new VerticalPanel();
+
+	public ChooseLayoutInfoScreen() {
+		layout.add(new HTML("<p><strong>No experiment selected:</strong><br />Please choose experiment!</p>"));
+	}
+
+	public VerticalPanel getScreen() {
+		return layout;
+	}
+
+	public void stopReload() {
+		
+	}
+
+	public void turnOffComponent() {
+		
+	}
+
+	public void changeVisibility() {
+		
+	}
+
+}

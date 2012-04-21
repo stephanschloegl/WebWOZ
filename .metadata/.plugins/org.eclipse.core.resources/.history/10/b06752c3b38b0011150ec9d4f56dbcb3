@@ -1,0 +1,15 @@
+package com.webwoz.wizard.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface DatabaseAccessAsync {
+
+	void storeData(String sql, AsyncCallback<String> callback);
+
+	void retrieveData(String sql, AsyncCallback<String[][]> callback);
+
+	void getTimeStamp(AsyncCallback<String> callback);
+
+	void closeConnection(AsyncCallback<Void> callback);
+
+}
