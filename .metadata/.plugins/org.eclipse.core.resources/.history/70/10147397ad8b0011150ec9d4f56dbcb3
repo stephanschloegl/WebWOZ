@@ -1,9 +1,0 @@
-package com.webwoz.client.client;
-
-import com.google.gwt.user.client.ui.VerticalPanel;
-
-public interface Screen {
-	VerticalPanel getScreen();
-	
-	void stopReload();
-}
