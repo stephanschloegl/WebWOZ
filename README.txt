@@ -1,16 +1,16 @@
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-| Thank you for your interest in using WebWOZ the web-based Wizard of Oz Prototyping Platform!  |
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+| Welcome to WebWOZ the web-based Wizard of Oz Prototyping Platform!  |
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-WebWOZ has been developed at the School of Computer Science & Statistics at Trinity College Dublin as part of 	research conducted a the Centre for Next Generation Localisation (CNGL). The responsible developer was Stephan Schlogl (stephan.schloegl@gmail.com) whose goal is it to give designers and researchers a quick and easy way to design and conduct Wizard of Oz (WOZ) experiments in connection with Language Technologies. WebWOZ is entirely web-based and can therefore be used with any device capable of running a modern web browser. 
+WebWOZ has been developed at the School of Computer Science & Statistics at Trinity College Dublin as part of research conducted at the Centre for Next Generation Localisation (CNGL). Our goal is it to give designers and researchers a quick and easy way to design and conduct Wizard of Oz (WOZ) experiments in connection with Language Technologies. WebWOZ is entirely web-based and can therefore be used with any device capable of running a modern web browser. 
 
 WebWOZ Features:
-	- Integration of existing Language Technology Components into WOZ
-	- Generic platform that can be used for different experiments
-	- Entirely web-based and therefore almost no setup time
-	- Multi-platform support
-	- Iteratively developed and improved by looking at the task of the wizard and its challenges
+- Integration of existing Language Technology Components into WOZ
+- Generic platform that can be used for different experiments
+- Entirely web-based and therefore almost no setup time
+- Multi-platform support
+- Iteratively developed and improved by looking at the task of the wizard and its challenges
 
 Please check out the project website at http://www.webwoz.com for further information!
 
