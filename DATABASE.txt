@@ -3606,7 +3606,6 @@ INSERT INTO `user` (`id`, `name`, `pw`, `role`) VALUES
 
 
 
-
 --
 -- Now create wizard and client user and grant them access to webwoz db
 --
