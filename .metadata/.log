@@ -69,3 +69,22 @@ HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@d8ff93),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2c18e3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@23950)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79f7d7)),sourcePriority=1064961)
+!SESSION 2012-06-04 16:41:08.975 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.5.0_30
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/stephanschlogl/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -keyring /Users/stephanschlogl/.eclipse_keyring -showlocation
+
+!ENTRY com.google.gdt.eclipse.managedapis 1 0 2012-06-04 16:41:34.287
+!MESSAGE Failed to load icon cache
+
+!ENTRY com.google.gdt.eclipse.core 1 0 2012-06-04 16:42:23.186
+!MESSAGE Scheduled rebuild of project webwozwizard because of plugin update (current version: 2.3.2.r36v201106211634)
+
+!ENTRY com.google.gdt.eclipse.core 2 0 2012-06-04 16:42:25.265
+!MESSAGE Unable to connect to http://dl.google.com/eclipse/plugin/3.6/site.xml.
+
+!ENTRY com.google.gdt.eclipse.managedapis 1 0 2012-06-04 19:01:46.442
+!MESSAGE Failed to load icon cache
