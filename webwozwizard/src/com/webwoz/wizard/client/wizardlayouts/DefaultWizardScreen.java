@@ -1727,7 +1727,7 @@ public class DefaultWizardScreen implements Screen {
 					+ " and sender = "
 					+ userList.getValue(userList.getSelectedIndex())
 					+ " and receiver = " + wizId
-					+ " and signal in (0, 1, 2, 3, 4) order by id desc limit 1";
+					+ " and sign in (0, 1, 2, 3, 4) order by id desc limit 1";
 
 			// Initialize the service remote procedure call
 			DatabaseAccessAsync databaseAccessSvc = GWT
@@ -2575,7 +2575,7 @@ public class DefaultWizardScreen implements Screen {
 
 	public void startProcessing(String time) {
 
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, signal, sender, receiver) values (\""
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, sign, sender, receiver) values (\""
 				+ "P R O C E S S I N G . . ."
 				+ "\", '"
 				+ "-"
@@ -3655,7 +3655,7 @@ public class DefaultWizardScreen implements Screen {
 	private void printReport() {
 		String sql = "select * from output where experiment = " + expId
 				+ " and user = " + userId
-				+ " and signal in (2, 3, 4) order by id";
+				+ " and sign in (2, 3, 4) order by id";
 
 		// System.out.println(sql);
 
@@ -4323,7 +4323,7 @@ public class DefaultWizardScreen implements Screen {
 		String time = DateTimeFormat.getMediumDateTimeFormat().format(
 				new Date());
 
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, signal, user, sender, receiver) values ('Stop Session (Wizard)', '-', '-', 'Stop Session (Wizard)', '-', '-', "
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, sign, user, sender, receiver) values ('Stop Session (Wizard)', '-', '-', 'Stop Session (Wizard)', '-', '-', "
 				+ expId
 				+ ", '"
 				+ time

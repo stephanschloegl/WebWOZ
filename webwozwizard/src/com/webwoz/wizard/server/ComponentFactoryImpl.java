@@ -339,7 +339,7 @@ public class ComponentFactoryImpl extends RemoteServiceServlet implements
 				+ "; ";
 
 		sql = sql
-				+ "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, signal, sender, receiver) values (\""
+				+ "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, sign, sender, receiver) values (\""
 				+ outputText + "\", '" + origAudioFile + "', '" + origMMFile
 				+ "', \"" + outputTranslation + "\", '" + transAudioFile
 				+ "', '" + transMMFile + "', \"" + getDateTime() + "\", " + id
