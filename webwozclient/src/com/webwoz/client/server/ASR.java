@@ -43,7 +43,7 @@ public class ASR extends HttpServlet {
 			throws ServletException, IOException {
 		if (request.getParameter("speechinput") != null) {
 
-			sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, signal, sender, receiver, asr) values (\""
+			sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, sign, sender, receiver, asr) values (\""
 					+ request.getParameter("speechinput")
 					+ "\", '-', '-', '-', '-', '-', '"
 					+ getDateTime()
