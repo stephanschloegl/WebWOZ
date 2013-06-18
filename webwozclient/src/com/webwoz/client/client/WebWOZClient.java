@@ -535,7 +535,7 @@ public class WebWOZClient implements EntryPoint {
 		String time = DateTimeFormat.getMediumDateTimeFormat().format(
 				new Date());
 
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, signal, sender, user, receiver) values ('Start Session (Client)', '-', '-', 'Start Session (Client)', '-', '-', "
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, sign, sender, user, receiver) values ('Start Session (Client)', '-', '-', 'Start Session (Client)', '-', '-', "
 				+ experiment
 				+ ", '"
 				+ time
@@ -570,7 +570,7 @@ public class WebWOZClient implements EntryPoint {
 		String time = DateTimeFormat.getMediumDateTimeFormat().format(
 				new Date());
 
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, signal, user, sender, receiver) values ('Stop Session (Client)', '-', '-', 'Stop Session (Client)', '-', '-', "
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, sign, user, sender, receiver) values ('Stop Session (Client)', '-', '-', 'Stop Session (Client)', '-', '-', "
 				+ experiment
 				+ ", '"
 				+ time
@@ -765,7 +765,7 @@ public class WebWOZClient implements EntryPoint {
 
 	private void insertInput(String input, String time) {
 
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, signal, sender, receiver, asr) values (\""
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, timestamp, experiment, user, sign, sender, receiver, asr) values (\""
 				+ input
 				+ "\", '-', '-', '-', '-', '-', '"
 				+ time

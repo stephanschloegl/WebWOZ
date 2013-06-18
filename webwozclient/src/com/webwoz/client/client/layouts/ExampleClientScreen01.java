@@ -487,7 +487,7 @@ public class ExampleClientScreen01 implements Screen {
 	}
 
 	private void startSession(int signal) {
-		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, signal, user) values ('-', '-', '-', '-', '-', '-', "
+		String sql = "Insert into output (textorig, audioorig, mmorig, texttrans, audiotrans, mmtrans, experiment, timestamp, played, sig, user) values ('-', '-', '-', '-', '-', '-', "
 				+ exp
 				+ ", '"
 				+ timestamp
