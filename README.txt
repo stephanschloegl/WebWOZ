@@ -12,8 +12,6 @@ WebWOZ Features:
 - Multi-platform support
 - Iteratively developed and improved by looking at the task of the wizard and its challenges
 
-Please check out the project website at http://www.webwoz.com for further information!
-
 
  - - - - - - - - - - - - - - -
 | R E Q U I R E M E N T S :   |
@@ -28,7 +26,7 @@ WebWOZ is developed in Java and therefore requires an application container that
 
 In order to install WebWOZ your need to first create the required database environment. Login to your MySQL database and run the SQL commands outlined in DATABASE.txt
 
-After the database environment is created you can copy the compiled Java code for both the webwozwizard as well as the webwozclient into the 'webapps' directory of your applications server. To do so, go first into the 'webwozwizard' directory and COPY the 'war' directory into the 'webapps' directory of your application server. Then RENAME the war directory that is now in your 'webapps' folder into 'webwozwizard'. Repeat the same for the 'war' directory in 'webwozclient'. This one your rename in 'webwozclient'. At the end your should have two new drectories in your 'webapps' folder. One called 'webwozwizard' and one called 'webwozclient'. Now restart your application server. After the server is back the WebWOZ wizard interface should be available at http://YourLocalhostApplicationServer/webwozwizard and the client interface at http://YourLocalhostApplicationServer/webwozclient.
+After the database environment is created you can copy the compiled Java code for both the webwozwizard as well as the webwozclient into the 'webapps' directory of your applications server. To do so, go first into the 'webwozwizard' directory and COPY the 'war' directory into the 'webapps' directory of your application server. Then RENAME the war directory that is now in your 'webapps' folder into 'webwozwizard'. Repeat the same for the 'war' directory in 'webwozclient'. This one you rename in 'webwozclient'. At the end your should have two new drectories in your 'webapps' folder. One called 'webwozwizard' and one called 'webwozclient'. Now restart your application server. After the server is back the WebWOZ wizard interface should be available at http://[YourLocalhostApplicationServer]/webwozwizard and the client interface at http://[YourLocalhostApplicationServer]/webwozclient.
 
 
  - - - - - - - - - - - - -
@@ -36,13 +34,6 @@ After the database environment is created you can copy the compiled Java code fo
  - - - - - - - - - - - - -
 
 WebWOZ was developed using the Google GWT in version 2.3.0. Further information about GWT can be found at: https://developers.google.com/web-toolkit/
-
-
- - - - - - - - - - - - - - - -
-| D O C U M E N T A T I O N : |
- - - - - - - - - - - - - - - -
-
-Please check out the WebWOZ documentation at: http://www.webwoz.com/downloads
 
 
  - - - - - - - - -
